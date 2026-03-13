@@ -54,13 +54,12 @@ async function registerUserController(req, res) {
                 email:user.email
             }
         })
-
 }
 
 /**
  * 
  * @name loginUserController
- * @description register a new user, expects username, email and password in the request body
+ * @description login user with email and password, expects email and password in the request body
  * @access Public
  */
 
@@ -124,7 +123,7 @@ async function logoutUserController(req, res) {
  */
 
 async function getMeController(req, res) {
-    const user = await userModel.findById(req.user.id);
+    const user = await userModel.findById(req.user.id); 
 
     res.status(200).json({
         message:"User feteched successfully",

@@ -31,7 +31,7 @@ const Register = () => {
                         <label htmlFor="username">Username</label>
                         <input 
                         onChange={(e) => setUsername(e.target.value)}
-                        type="username" id='username' name='username' placeholder='Enter username address' />
+                        type="username" id='username' name='username' placeholder='Enter username' />
                     </div>
                     <div className="input-group">
                         <label htmlFor="email">Email</label>

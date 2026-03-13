@@ -8,7 +8,7 @@ app.use(cors({
     credentials: true
 }));
 app.use(express.json()); //. allow to read data in req.body
-app.use(cookieParser());
+app.use(cookieParser()); //. allow to read cookies in req.cookies
 
 // require all the routes  here
 const authRouter = require("./src/routes/auth.routes");
